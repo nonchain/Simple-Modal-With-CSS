@@ -1,0 +1,58 @@
+body
+{
+  background-color: #eaf6f6;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input
+{
+  display: none;
+}
+
+label
+{
+  cursor: pointer;
+}
+
+.btn__show
+{
+  padding: 1.5rem 2.5rem;
+  background-color: #fd2020;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.modal
+{
+  width: 324px;
+  height: 194px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
+}
+
+.btn__ok
+{
+  padding: 1rem 0;
+  width: 100%;
+  background-color: #70a4f7;
+  color: #fff;
+  text-align: center;
+}
+
+/*========== CLICK ==========*/
+#modal:checked ~ .modal
+{
+  opacity: 1;
+  visibility: visible;
+}
